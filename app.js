@@ -15,3 +15,11 @@ function agregarAmigo() {
     return false
   } 
 }
+
+function sortearAmigo() {
+  let listadoAmigos = document.getElementById('listaAmigos');
+  listadoAmigos.innerHTML = '';
+  let indiceRandom = Math.floor(Math.random() * listado.length);
+  let amigoSecreto = document.getElementById('resultado');
+  return amigoSecreto.innerHTML = 'El amigo secreto sorteado es: ' + listado[indiceRandom];
+}
